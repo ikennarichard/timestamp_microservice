@@ -1,5 +1,5 @@
 /**
- * Returns whether value is a valid date instance
+ * Checks whether value is a valid date instance
  * @param value - date entry
  * @returns - boolean
  */
