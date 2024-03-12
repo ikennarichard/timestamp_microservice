@@ -9,7 +9,7 @@ describe("Test the path", () => {
       .expect(200);
   });
 
-  test("It should response the GET method", async () => {
+  test("It should return the correct response", async () => {
     const response = await request(app)
       .get("/api/2024-02-19")
     expect(JSON.parse(response.text))
