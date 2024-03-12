@@ -2,8 +2,7 @@ import 'dotenv/config';
 import express from 'express';
 import isValid from './isValid';
 
-const app = express();
-const port = process.env.PORT;
+export const app = express();
 
 app.use(express.json());
 
@@ -28,9 +27,3 @@ app.get('/api/:dateEntry', (req, res) => {
     "utc": date.toUTCString()
   });
 });
-
-app.listen(port, () => (
-  console.log(
-    `🚀 Server is running at localhost:${port}`
-  )
-));
