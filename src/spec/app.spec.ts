@@ -1,4 +1,3 @@
-import { response } from "express";
 import { app } from "../app";
 import request from "supertest";
 
@@ -14,8 +13,8 @@ describe("Test the path", () => {
       .get("/api/2024-02-19")
     expect(JSON.parse(response.text))
     .toEqual({
-      "unix":1708300800000,"utc":
-      "Mon, 19 Feb 2024 00:00:00 GMT"
+      "unix":1708300800000,
+      "utc":"Mon, 19 Feb 2024 00:00:00 GMT"
     })
   });
 });
