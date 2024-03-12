@@ -5,6 +5,7 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Test](#test)
 - [Docker Setup](#docker-setup)
 - [Contributing](#contributing)
 - [License](#license)
@@ -55,6 +56,14 @@ Go to this __Endpoint__: /api/:dateEntry in your browser
 - Example 2: localhost:3000/api/2015-12-25
 
 Response: {"unix":1451001600000,"utc":"Fri, 25 Dec 2015 00:00:00 GMT"}
+
+## Test
+
+To run the test, enter the following command in the terminal
+
+```bash
+npm test
+```
 
 ## Docker Setup
 
